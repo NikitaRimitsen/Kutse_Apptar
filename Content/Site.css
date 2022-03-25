@@ -1,0 +1,86 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url("../Images/fonbeze.jpg");
+    /*background: url("../Images/gif.gif");*/
+    /*background-color: #FFE4B5;*/
+    background-size: 100%;
+    background-attachment: fixed;
+    /*font-family: 'Bookshelf Symbol 7' ;*/
+    font-family: 'Microsoft YaHei UI';
+}
+
+h4,h3{
+    color: black;
+}
+p {
+    color: black;
+}
+p#vnizu{
+    color: black;
+}
+    p#anketa {
+        color: black;
+    }
+ul#spisok{
+    background-color: white;
+    width: 30%;
+    border: 3px dashed black;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+abbr{
+    color:black;
+}
+
+strong {
+    color: black;
+}
+hr{
+    border: 1px solid black;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+a.btn btn-primary {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+a.btn btn-primary {
+    background-color: #3e8e41
+}
+
+a.btn btn-primary {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+

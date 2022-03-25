@@ -1,0 +1,28 @@
+﻿@model Kutse_App.Models.IndexViewModel
+@{
+    ViewBag.Title = "Manage";
+}
+
+<h2>Seade</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>Muutke oma konto seadeid</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Parool:</dt>
+        <dd>
+            [
+            @if (Model.HasPassword)
+            {
+                @Html.ActionLink("Change your password", "ChangePassword")
+            }
+            else
+            {
+                @Html.ActionLink("Create", "SetPassword")
+            }
+            ]
+        </dd>
+        
+    </dl>
+</div>

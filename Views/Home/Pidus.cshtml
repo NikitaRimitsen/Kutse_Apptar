@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Kutse_App.Models.Pidu>
+
+@{
+    ViewBag.Title = "Pidus";
+}
+
+<h2>Pidus</h2>
+
+<p>
+    @Html.ActionLink("Loo Uus Pidu", "CreatePidu", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Pidu_nimi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Paev)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pidu_nimi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Paev)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditPidu", new { id=item.PiduId }) 
+            @Html.ActionLink("Kustutama", "DeletePidu", new { id=item.PiduId })
+        </td>
+    </tr>
+}
+
+</table>

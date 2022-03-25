@@ -1,0 +1,30 @@
+﻿@model Kutse_App.Models.Guest
+
+@{
+    ViewBag.Title = "Tänan";
+}
+
+<div>
+    <h3> Tänan sind, @Model.Name</h3>
+    @*<p>Test: @Model.Email</p>*@
+</div>
+
+<div>
+    @if (Model.WillAttend == true)
+    {
+        <h3>Ootan siin väga!!!</h3>
+        <br />
+        <img src="~/Images/great.jpg" />
+        <br /><br />
+        @Html.ActionLink("Meeldetuletus", "Meeledus", "Home", new { @class = "btn btn-primary" })
+        
+    }
+    else
+    {
+        <h3>Väga kurb!!! Näeme seisel korral!!!</h3>
+        <br />
+        <img src="~/Images/bad.png" />
+        <br /><br />
+        @Html.ActionLink("Tagasi avalehele", "Index", "Home", new { @class = "btn btn-primary" })
+    }
+</div>
